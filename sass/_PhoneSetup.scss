@@ -1,0 +1,135 @@
+@media (max-width: 1000px) {
+  .main-header {
+    img {
+      width: 30%;
+    }
+  }
+  .main-nav {
+    li {
+      margin: 0px 10px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+  .main-showcase {
+    .container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      .showcase-contents {
+        h1 {
+          line-height: 1.2em;
+          font-size: 1.5rem;
+        }
+        #form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          input[type="submit"] {
+            width: 100%;
+          }
+          input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .info {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      font-size: 1rem;
+      .showcase-contents {
+        h1 {
+          line-height: 1.2em;
+          font-size: 1.2em;
+        }
+      }
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  .action {
+    background-color: $DesaturatedBlue;
+    color: $LightGrayishBlue;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      height: 45vh;
+      .showcase-contents {
+        h1 {
+          margin-bottom: 20px;
+          font-size: 1.2em;
+          text-align: center;
+        }
+        p {
+          color: $LightGrayishBlue;
+          font-size: 1rem;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      #form {
+        input[type="text"] {
+          outline: none;
+          padding: 15px;
+          border-radius: 4px;
+          width: 100%;
+          margin-bottom: 10px;
+          font-size: 11pt;
+          border: none;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.096);
+        }
+        input[type="submit"] {
+          outline: none;
+          padding: 15px 30px;
+          border: none;
+          width: 100%;
+          font-weight: bold;
+          font-size: 10.5pt;
+          color: $LightGrayishBlue;
+          background-color: $BrightBlue;
+          border-radius: 4px;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.096);
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .container {
+      margin: 50px 0px;
+      .footer-contents {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        .links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

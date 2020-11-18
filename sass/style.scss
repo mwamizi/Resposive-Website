@@ -1,0 +1,212 @@
+@import "baseSetup";
+@import "colors";
+
+.main-header {
+  .container {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main-nav {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// showcase contents
+
+.main-showcase {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    .showcase-contents {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-bottom: 1rem;
+      }
+      #form {
+        input[type="text"] {
+          outline: none;
+          padding: 15px 20px;
+          border-radius: 4px;
+          width: 40%;
+          font-size: 11pt;
+          border: 2px solid $LightGray;
+        }
+        input[type="submit"] {
+          outline: none;
+          padding: 17px 45px;
+          border: none;
+          font-weight: bold;
+          font-size: 10.5pt;
+          margin-left: 10px;
+          color: $LightGrayishBlue;
+          background-color: $BrightBlue;
+          border-radius: 4px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// info Contents
+
+.info {
+  .bottom-image {
+    width: 100%;
+    background-color: #fff;
+  }
+  background-color: $LightGrayishBlue;
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+    grid-template-columns: repeat(2, 1fr);
+    .showcase-contents {
+      h1 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+
+    .link {
+      color: $ModerateCyan;
+      border-bottom: 2px solid $ModerateCyan;
+      padding-bottom: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 60%;
+      padding: 25px;
+      margin-top: 40px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.096);
+      .pic {
+        display: flex;
+        align-items: center;
+        .pc {
+          img {
+            width: 50px;
+            border-radius: 50%;
+          }
+        }
+        .detail {
+          align-self: center;
+          margin-left: 10px;
+          h4 {
+            margin-top: 10px;
+          }
+        }
+      }
+      span {
+        img {
+          width: 5%;
+        }
+        padding-bottom: 20px;
+      }
+      p {
+        font-size: 12pt;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.action {
+  background-color: $DesaturatedBlue;
+  color: $LightGrayishBlue;
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 35vh;
+    .showcase-contents {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2.1rem;
+      }
+      p {
+        color: $LightGrayishBlue;
+        font-size: 19px;
+        width: 70%;
+      }
+    }
+    #form {
+      input[type="text"] {
+        outline: none;
+        padding: 18px;
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 11pt;
+        border: none;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.096);
+      }
+      input[type="submit"] {
+        outline: none;
+        padding: 18px 30px;
+        border: none;
+        font-weight: bold;
+        font-size: 10.5pt;
+        color: $LightGrayishBlue;
+        background-color: $BrightBlue;
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.096);
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $VeryDarkBlue;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  .container {
+    color: $LightGrayishBlue;
+    .logo {
+      margin-bottom: 20px;
+    }
+    .footer-contents {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      ul li {
+        span {
+          margin-right: 20px;
+        }
+        margin-bottom: 20px;
+        a {
+          color: $LightGrayishBlue;
+        }
+      }
+    }
+    .links {
+      display: flex;
+    }
+  }
+}
+
+@import "PhoneSetup";
